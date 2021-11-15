@@ -13,10 +13,8 @@
 :root {
     --color-primary:   rgb(0, 175, 239);
     --color-secundary: rgb(15, 12, 13);
-    --mount-meadow:    rgb(27, 188, 156);
     --white-smoke:     rgb(240, 240, 240);
     --night-rider:     rgb(25, 27, 23);
-    --black:           rgb(25, 27, 23);
     --trasition:       all 0.5s ease-in-out;
 }
 
@@ -44,13 +42,15 @@ html {
 
 body {
     font-family: FONT-ITC,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--color-secundary);
+    color: #fff;
 }
 
 /* SETUP & REUSABLE STYLINGS */
 
 a {
     text-decoration: none;
-    color: var(--black);
+    color: #fff;
 }
 
 li {

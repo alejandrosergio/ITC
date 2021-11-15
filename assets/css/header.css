@@ -16,7 +16,7 @@
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,19 +26,17 @@
 
 .brand-and-toggler {
     font-size: 1.65rem;
-    padding: 0.8rem 0;
+    padding: .8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar-brand {
-    font-weight: 500;
-    color: var(--night-rider);
-}
-
 .navbar-brand img{
+    display: flex;
     width: 60%;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -75,6 +73,7 @@
 
 .navbar-collapse {
     display: none;
+    transition: var(--trasition);
 }
 
 .hero-div {
@@ -84,36 +83,37 @@
 }
 
 .hero-div h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-bottom: 0.4rem;
 }
 
 .header p {
     color: var(--white-smoke);
     font-size: 1.1rem;
+    margin-top: 1em;
     letter-spacing: 3px;
 }
 
 .hero-btns {
-    margin-top: 2.8rem;
+    margin-top: 3.5rem;
 }
 
 .hero-btns button {
-    border: 3.5px solid #fff;
+    border: 3.5px solid var(--color-primary);
     border-radius: 2rem;
-    padding: 0.8rem 2rem;
+    padding: .8rem 2.5rem;
     text-transform: uppercase;
 }
 
 .btn-trans {
-    color: #fff;
-    color: var(--nigtn-rider);
+    color: var(--color-primary);
     transition: var(--trasition);
 }
 
 .btn-trans:hover {
-    background: var(--color-primary);
-    border-color: var(--color-primary);
+    background: hsla(0, 0%, 100%, 0.216);
+    border-color: #fff;
+    color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -124,7 +124,7 @@
     
     .navbar {
         background: transparent;
-        /* margin-top: 1.4rem; */
+        transition: var(--trasition);
     }
 
     .navbar .container{
@@ -133,17 +133,13 @@
         justify-content: space-between;
     }
 
-    .navbar-brand {
-        color: var(--white-smoke);
-        font-size: 2rem;
-    }
-
     .navbar-toggler {
         display: none;
     }
 
     .navbar-collapse {
         display: block !important;
+        transition: var(--trasition);
     }
 
     .navbar-nav {
@@ -169,8 +165,40 @@
     }
 
     /* navbar change */
-    .navbar {
+    .cng-navbar {
         box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        margin-top: 0;
+        background: var(--color-secundary);
+        transition: var(--trasition);
+    }
+
+    .cng-navbar .navbar-brand {
+        color: var(--night-rider);
+    }
+
+    .cng-navbar .nav-link {
+        color: #fff;
+    }
+
+    .cng-navbar .nav-link:hover {
+        color: var(--color-primary);
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .hero-div h1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-div p{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5em;
     }
 
 }
