@@ -3,26 +3,81 @@
 --------------------------------------------------------------*/
 
 @import url(./normalize.css);
-
-/*--------------------------------------------------------------
-# FONTS
---------------------------------------------------------------*/
-
-
+@import url(./fonts.css);
+@import url(./header.css);
 
 /*--------------------------------------------------------------
 # ROOT
 --------------------------------------------------------------*/
 
-:root{
-    --color-primary: rgb(0, 175, 239);
+:root {
+    --color-primary:   rgb(0, 175, 239);
     --color-secundary: rgb(15, 12, 13);
+    --mount-meadow:    rgb(27, 188, 156);
+    --white-smoke:     rgb(240, 240, 240);
+    --night-rider:     rgb(25, 27, 23);
+    --black:           rgb(25, 27, 23);
+    --trasition:       all 0.5s ease-in-out;
 }
 
 /*--------------------------------------------------------------
 # GENERAL
 --------------------------------------------------------------*/
 
-html,body{
-    background: var(--color-secundary);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: FONT-ITC,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SETUP & REUSABLE STYLINGS */
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+    background: transparent;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.6rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

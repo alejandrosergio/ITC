@@ -1,0 +1,176 @@
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../img/header.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secundary);
+    z-index: 999;
+}
+
+.brand-and-toggler {
+    font-size: 1.65rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: var(--night-rider);
+}
+
+.navbar-brand img{
+    width: 70%;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #fff;
+    transition: var(--trasition);
+}
+
+.navbar-toggler:hover {
+    color: var(--color-primary);
+}
+
+.navbar-nav {
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+.nav-item {
+    padding: 0.6rem 0;
+}
+
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    opacity: 0.65;
+    transition: var(--trasition);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.hero-div {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-div h1 {
+    font-size: 3rem;
+    padding-bottom: 0.4rem;
+}
+
+.header p {
+    color: var(--white-smoke);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.hero-btns {
+    margin-top: 2.8rem;
+}
+
+.hero-btns button {
+    border: 3.5px solid #fff;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-trans {
+    color: #fff;
+    color: var(--nigtn-rider);
+    transition: var(--trasition);
+}
+
+.btn-trans:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# MEDIS QUERY
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 992px){
+    
+    .navbar {
+        background: transparent;
+        margin-top: 1.4rem;
+    }
+
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        color: var(--white-smoke);
+        font-size: 2rem;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin-left: 1.8rem;
+    }
+
+    .nav-link {
+        color: var(--white-smoke);
+    }
+
+    .hero-div h1{
+        font-size: 3.8rem;
+    }
+
+    .btn-trans {
+        display: inline-block;
+        margin-right: 0.8rem;
+    }
+
+    /* navbar change */
+    .navbar {
+        box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+    }
+
+}
