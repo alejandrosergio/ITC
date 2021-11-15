@@ -38,7 +38,7 @@
 }
 
 .navbar-brand img{
-    width: 70%;
+    width: 60%;
 }
 
 .navbar-toggler {
@@ -124,7 +124,7 @@
     
     .navbar {
         background: transparent;
-        margin-top: 1.4rem;
+        /* margin-top: 1.4rem; */
     }
 
     .navbar .container{
