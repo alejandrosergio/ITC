@@ -16,12 +16,16 @@
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: var(--color-secundary);
     z-index: 999;
+}
+
+.navbar.cng-navbar{
+    box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
 }
 
 .brand-and-toggler {
@@ -71,6 +75,10 @@
     color: var(--color-primary);
 }
 
+.nav-link.active{
+    color: var(--color-primary);
+}
+
 .navbar-collapse {
     display: none;
     transition: var(--trasition);
@@ -91,7 +99,7 @@
     color: var(--white-smoke);
     font-size: 1.1rem;
     margin-top: 1em;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .hero-btns {
@@ -100,9 +108,11 @@
 
 .hero-btns button {
     border: 3.5px solid var(--color-primary);
+    background: rgba(0, 180, 235, 0.134);
     border-radius: 2rem;
     padding: .8rem 2.5rem;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn-trans {
@@ -178,6 +188,10 @@
 
     .cng-navbar .nav-link {
         color: #fff;
+    }
+
+    .cng-navbar .nav-link.active {
+        color: var(--color-primary);
     }
 
     .cng-navbar .nav-link:hover {

@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 
 :root {
-    --color-primary:   rgb(0, 175, 239);
+    --color-primary:   rgba(0, 175, 239,1);
     --color-secundary: rgb(15, 12, 13);
     --white-smoke:     rgb(240, 240, 240);
     --night-rider:     rgb(25, 27, 23);
@@ -64,7 +64,7 @@ button {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -80,4 +80,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section {
+    padding: 5em 2em 0;
+}
+
+/*--------------------------------------------------------------
+# MEDIS QUERY
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 992px){
+    
+    .section {
+        padding: 6em 4em 0;
+    }
+
 }
