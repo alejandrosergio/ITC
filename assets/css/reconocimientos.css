@@ -1,0 +1,60 @@
+.container_reconocimientos {
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-reconocimientos {
+    width: 41%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-reconocimientos img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.reconocimientos {
+    width: 57%;
+}
+
+.group {
+    width: 100%;
+    padding: 0 0 2em;
+}
+
+.group h2{
+    font-weight: 900;
+    padding: 0 0 .5em;
+}
+
+.group p{
+    color: rgb(164, 164, 164);
+}
+
+@media screen and (max-width: 1200px){
+    
+    .container_reconocimientos {
+        flex-direction: column;
+    }
+
+    .img-reconocimientos {
+        width: 100%;
+    }
+    
+    .img-reconocimientos img {
+        object-fit: cover;
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 2em;
+    }
+    
+    .reconocimientos {
+        width: 100%;
+    }
+
+}

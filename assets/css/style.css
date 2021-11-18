@@ -5,6 +5,7 @@
 @import url(./normalize.css);
 @import url(./fonts.css);
 @import url(./header.css);
+@import url(./reconocimientos.css);
 
 /*--------------------------------------------------------------
 # ROOT
@@ -83,7 +84,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    padding: 5em 2em 0;
+    padding: 6em 2em 0;
+}
+
+.title {
+    text-align: center;
+    color: var(--color-primary);
+    padding: 0 0 2em;
 }
 
 /*--------------------------------------------------------------
@@ -93,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 992px){
     
     .section {
-        padding: 6em 4em 0;
+        padding: 5em 4em 0;
     }
 
 }
